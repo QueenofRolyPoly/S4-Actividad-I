@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #c2185b, #f06292);
+    padding-bottom: 60px;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.nosotros {
+    background: linear-gradient(135deg, #ad1457, #ec407a);
+}
+
+.nosotros-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nosotros-content img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.servicios {
+    background: linear-gradient(135deg, #c2185b, #f48fb1);
+}
+
+.servicios-grid {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.servicio {
+    flex: 1;
+    text-align: center;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contacto {
+    background: linear-gradient(135deg, #ff7043, #f06292);
+    text-align: center;
+}
+
+.cita {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #880e4f;
+}/* Botón */
+#themeToggle {
+    background: white;
+    color: #c2185b;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+}
+
+/* MODO OSCURO */
+.dark-mode {
+    background-color: #121212;
+    color: #ff057a;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.dark-mode .nosotros {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+}
+
+.dark-mode .servicios {
+    background: linear-gradient(135deg, #222, #444);
+}
+
+.dark-mode .contacto {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+}
+
+.dark-mode footer {
+    background-color: #000;
+}
+
+.dark-mode #themeToggle {
+    background: #333;
+    color: white;
+}
